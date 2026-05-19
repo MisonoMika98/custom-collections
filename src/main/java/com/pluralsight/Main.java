@@ -31,7 +31,7 @@ public class Main
 
 
 
-        FixedList<String> strings = new FixedList<>(5);
+        FixedList<String> strings = new FixedList<>(6);
 
         strings.add("Hello");
         strings.add("peepee poopoo");
