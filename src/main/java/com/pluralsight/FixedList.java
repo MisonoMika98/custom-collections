@@ -10,17 +10,22 @@ public class FixedList<T>
 
     public FixedList(int maxSize)
     {
-        this.maxSize = 10;
+        this.maxSize = maxSize;
         this.items = new ArrayList<T>();
     }
 
+    public int getMaxSize() {return maxSize;}
+
     public void add(T item)
     {
-        items.add(item);
+        if (items.size() < maxSize)
+        {
+            items.add(item);
+        }
     }
 
-    public void getItems()
+    public List<T> getItems()
     {
-
+        return items;
     }
 }
